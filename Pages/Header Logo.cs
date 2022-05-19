@@ -41,22 +41,11 @@ namespace CMS_Testing.Pages
             Thread.Sleep(2000);
 
             String expecttitle = "Home - typo11";
-        Assert.AreEqual(expecttitle, driver.Title);
-        Console.WriteLine(driver.Title);
-           /* TakeScreenshot(driver, driver.FindElement(By.XPath("//a//img")));*/
+            Assert.AreEqual(expecttitle, driver.Title);
+            Console.WriteLine(driver.Title);
+
         }
-     /*   public void TakeScreenshot(IWebDriver driver, IWebElement element)
-        {
-
-            string fileName = "C:\\Users\\daman\\OneDrive - Whitireia and WelTec\\Capstone Project\\Ocular\\CMS - Testing\\Extent - reports" + DateTime.Now.ToString("yyyy -MM-dd HH-mm-ss") + ".jpg";
-            Byte[] byteArray = ((ITakesScreenshot)driver).GetScreenshot().AsByteArray;
-            Bitmap screenshot = new Bitmap(new System.IO.MemoryStream(byteArray));
-            Rectangle croppedImage = new Rectangle(element.Location.X, element.Location.Y, element.Size.Width, element.Size.Height);
-            screenshot = screenshot.Clone(croppedImage, screenshot.PixelFormat);
-            screenshot.Save(System.String.Format(fileName, ScreenshotImageFormat.Png));
      
-
-        }*/
       
 
     }

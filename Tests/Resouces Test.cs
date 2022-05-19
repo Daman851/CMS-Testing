@@ -36,6 +36,7 @@ namespace CMS_Testing.Tests
             Thread.Sleep(2000);
             lp.pagination();                  //Calling the base page methods(Pagination)//
             Thread.Sleep(2000);
+            Console.WriteLine("Success on Paginattion");
         }
         [TearDown]
 
